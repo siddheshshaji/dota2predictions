@@ -24,7 +24,7 @@ def page_not_found(e):
 
 @app.route('/predict',methods = ['POST','GET'])
 def predict():
-    int_features = [0] * 220
+    int_features = [0] * 20
     response = [int(x) for x in request.form.values()]
     if len(set(response)) == 10:
         for i in response:
